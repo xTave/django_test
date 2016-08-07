@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.main_page, name='main_page'),
-    url(r'^blog$', views.)
+    url(r'^blog$', views.blog_page, name="blog_page")
 ]
