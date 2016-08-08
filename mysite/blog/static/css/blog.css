@@ -1,0 +1,39 @@
+h1 a
+{
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+.text
+{
+    font-size: 20;
+    margin-left: 15px;
+}
+
+.title
+{
+    font-size: 50;
+}
+
+.published
+{
+    font-size: 15;
+    margin-left: 10px;
+}
+
+body
+{
+    background-color = #000000
+}
+
+.blog_title
+{
+    background-color: #FCA205;
+    color: #FFFFFF;
+    background-size: 100%;
+}
+
+.blog_title h1 a
+{
+    color: #FFFFFF;
+    font-family: 'Lobster';
+}

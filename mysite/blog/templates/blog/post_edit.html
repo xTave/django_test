@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+    {% block content %}
+        {% if edit %}
+            <h1>Edit post</h1>
+        {% else %}
+            <h1>New post</h1>
+        {% endif %}
+        <form method="post" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+        {% if edit %}
+            <a class="btn btn-default" href="..\delete\">
+                DELETE
+            </a>
+        {% endif %}
+    {% endblock %}
