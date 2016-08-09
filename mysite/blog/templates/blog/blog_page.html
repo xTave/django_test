@@ -1,31 +1,18 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="blog_title">
-        <h1>
-            <a href="{% url 'blog_page' %}">Tave's Blog</a>
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu">
-                    <span class="glyphicon glyphicon-plus"></span>
-                </a>
-            {% endif %}
-        </h1>
-    </div>
-
     {% for post in posts %}
-        <div class="post">
-            <h1 class="post_title">
-                <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
-                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
-                    <span class="glyphicon glyphicon-pencil">
-                    </span>
-                </a>
-                <spans class="published">published: {{ post.published_date }}</spans>
-            </h1>
+        <h1 class="post_title">
+            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
+                <span class="glyphicon glyphicon-pencil">
+                    Change
+                </span>
+            </a>
+            <span class="published">published: {{ post.published_date }}</span>
+        </h1>
 
-            <p class="text">{{ post.text }} </p>
-            <br>
-        </div>
+        <p class="text">{{ post.text }} </p>
+        <br>
     {% endfor %}
-
 {% endblock content %}

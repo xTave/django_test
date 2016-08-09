@@ -17,7 +17,7 @@ h1 a
     font-size: 15;
 }
 
-.post
+.main_content
 {
     padding-left: 3%;
 }
@@ -40,3 +40,4 @@ body
     font-family: 'Lobster';
     padding-left: 15;
 }
+
