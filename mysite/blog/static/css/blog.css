@@ -1,15 +1,13 @@
 h1 a
 {
     color: #FCA205;
-    font-family: 'Lobster';
 }
 .text
 {
     font-size: 20;
-    margin-left: 15px;
 }
 
-.title
+.post_title
 {
     font-size: 50;
 }
@@ -17,23 +15,28 @@ h1 a
 .published
 {
     font-size: 15;
-    margin-left: 10px;
+}
+
+.post
+{
+    padding-left: 3%;
 }
 
 body
 {
-    background-color = #000000
+
 }
 
 .blog_title
 {
     background-color: #FCA205;
     color: #FFFFFF;
-    background-size: 100%;
+    padding: 20px 20px 20px 40px;
 }
 
 .blog_title h1 a
 {
     color: #FFFFFF;
     font-family: 'Lobster';
+    padding-left: 15;
 }
